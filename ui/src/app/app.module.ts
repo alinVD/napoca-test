@@ -5,11 +5,15 @@ import { HTTP_INTERCEPTORS, HttpClientModule, HttpClientXsrfModule } from '@angu
 
 import { AppComponent } from './app.component';
 import { RouteExampleComponent } from './route-example/route-example.component';
-
+import { SimulatorComponent } from './simulator/simulator.component';
 import { AppService } from './app.service';
 import { AppHttpInterceptorService } from './http-interceptor.service';
 
 const routes: Routes = [
+  {
+    path: 'start',
+    component: SimulatorComponent
+  },
   {
     path: 'scala',
     component: RouteExampleComponent,
@@ -35,7 +39,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    RouteExampleComponent
+    RouteExampleComponent,
+    SimulatorComponent
   ],
   imports: [
     BrowserModule,

@@ -13,3 +13,5 @@ GET     /*file                      controllers.FrontendController.assetOrDefaul
 
 # Test post request
 POST    /api/postTest               controllers.HomeController.postTest()
+
+POST    /api/simulator/start            controllers.SimulatorController.start()
