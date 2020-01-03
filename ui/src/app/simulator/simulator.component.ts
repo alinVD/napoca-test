@@ -18,7 +18,7 @@ export class SimulatorComponent {
   /**
    * This method is used to test the post request
    */
-  public bruh(): void {
+  public startSimulator(): void {
     this.simulatorService.sendRequest().subscribe((data: any) => {
       this.data = data.content;
       console.log(data);
